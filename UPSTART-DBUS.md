@@ -17,12 +17,11 @@ The [d-feet](http://live.gnome.org/DFeet) application can be used to inspect
 the "live" D-Bus status on your or a remote machine. It was used to write
 the following Upstart D-Bus object descriptions.
 
-Object Paths
-------------
+--------------------------------------------------------------------------------
 
 # Manager Object - /com/ubuntu/Upstart
 
-## Interface com.ubuntu.Upstart0\_6
+## Interface - com.ubuntu.Upstart0\_6
 
 **Methods**
 
@@ -43,7 +42,7 @@ Object Paths
 
 # Job Object - /com/ubuntu/Upstart/jobs/[name]
 
-## Interface com.ubuntu.Upstart0\_6.Job
+## Interface - com.ubuntu.Upstart0\_6.Job
 
 **Methods**
 
@@ -68,7 +67,7 @@ Object Paths
 
 # Instance Object - /com/ubuntu/Upstart/jobs/[name]/[instance]
 
-## Interface com.ubuntu.Upstart0\_6.Instance
+## Interface - com.ubuntu.Upstart0\_6.Instance
 
 **Methods**
 
