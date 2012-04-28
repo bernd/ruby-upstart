@@ -12,6 +12,11 @@ The library is written in pure Ruby and uses the
 [ruby-dbus](https://github.com/mvidner/ruby-dbus/) library to communicate with
 Upstart's D-Bus interface.
 
+WARNING
+-------
+
+There is no code yet!
+
 Features
 --------
 
