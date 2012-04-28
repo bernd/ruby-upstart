@@ -1,5 +1,5 @@
 Upstart D-Bus
--------------
+=============
 
 The Upstart init daemon contains a D-Bus server which exports several services
 to the system bus. That means Upstart can be controlled and inspected with any
@@ -41,7 +41,7 @@ Object Paths
 * JobAdded(ObjectPath job)
 * JobRemoved(ObjectPath job)
 
-# Job Object - /com/ubuntu/Upstart/jobs/<name>
+# Job Object - /com/ubuntu/Upstart/jobs/[name]
 
 ## Interface com.ubuntu.Upstart0\_6.Job
 
@@ -66,7 +66,7 @@ Object Paths
 * InstanceAdded(ObjectPath instance)
 * InstanceRemoved(ObjectPath instance)
 
-# Instance Object - /com/ubuntu/Upstart/jobs/<name>/<instance>
+# Instance Object - /com/ubuntu/Upstart/jobs/[name]/[instance]
 
 ## Interface com.ubuntu.Upstart0\_6.Instance
 
