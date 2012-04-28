@@ -5,7 +5,7 @@ The Upstart init daemon contains a D-Bus server which exports several services
 to the system bus. That means Upstart can be controlled and inspected with any
 program that uses D-Bus bindings. (and has the needed permissions!)
 
-It is available on the system bus with the name *com.ubuntu.Upstart*.
+It is available on the system bus with the name _com.ubuntu.Upstart_.
 
 If the D-Bus system daemon is not available, it is possible to open a private
 D-Bus connection to the Upstart daemon via the
@@ -24,19 +24,19 @@ Object Paths
 
 ## Interface com.ubuntu.Upstart0\_6
 
-*Methods*
+_Methods_
 
 * EmitEvent(String name, Array[String] env, Boolean wait)
 * GetAllJobs() => (Array[ObjectPath] jobs)
 * GetJobByName(String name) => (ObjectPath job)
 * ReloadConfiguration()
 
-*Properties*
+_Properties_
 
 * String log\_priority
 * String version
 
-*Signals*
+_Signals_
 
 * JobAdded(ObjectPath job)
 * JobRemoved(ObjectPath job)
@@ -45,7 +45,7 @@ Object Paths
 
 ## Interface com.ubuntu.Upstart0\_6.Job
 
-*Methods*
+_Methods_
 
 * GetAllInstances() => (Array[ObjectPath] instances)
 * GetInstance(Array[String env]) => (ObjectPath instance)
@@ -54,14 +54,14 @@ Object Paths
 * Start(Array[String] env, Boolean wait) => (ObjectPath instance)
 * Stop(Array[String] env, Boolean wait)
 
-*Properties*
+_Properties_
 
 * String author
 * String description
 * String name
 * String version
 
-*Signals*
+_Signals_
 
 * InstanceAdded(ObjectPath instance)
 * InstanceRemoved(ObjectPath instance)
@@ -70,13 +70,13 @@ Object Paths
 
 ## Interface com.ubuntu.Upstart0\_6.Instance
 
-*Methods*
+_Methods_
 
 * Restart(Boolean wait)
 * Start(Boolean wait)
 * Stop(Boolean wait)
 
-*Properties*
+_Properties_
 
 * Array[Struct[String, Int32]] processes
 * String goal
