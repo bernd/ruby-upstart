@@ -3,7 +3,10 @@
 .bundle
 .config
 coverage
+.rvmrc
+Gemfile.lock
 InstalledFiles
+coverage
 lib/bundler/man
 pkg
 rdoc
