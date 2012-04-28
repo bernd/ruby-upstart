@@ -19,9 +19,9 @@ the following Upstart D-Bus object descriptions.
 
 --------------------------------------------------------------------------------
 
-# Manager Object - /com/ubuntu/Upstart
+## Manager Object - /com/ubuntu/Upstart
 
-## Interface - com.ubuntu.Upstart0\_6
+### Interface - com.ubuntu.Upstart0\_6
 
 **Methods**
 
@@ -40,9 +40,9 @@ the following Upstart D-Bus object descriptions.
 * JobAdded(ObjectPath job)
 * JobRemoved(ObjectPath job)
 
-# Job Object - /com/ubuntu/Upstart/jobs/[name]
+## Job Object - /com/ubuntu/Upstart/jobs/[name]
 
-## Interface - com.ubuntu.Upstart0\_6.Job
+### Interface - com.ubuntu.Upstart0\_6.Job
 
 **Methods**
 
@@ -65,9 +65,9 @@ the following Upstart D-Bus object descriptions.
 * InstanceAdded(ObjectPath instance)
 * InstanceRemoved(ObjectPath instance)
 
-# Instance Object - /com/ubuntu/Upstart/jobs/[name]/[instance]
+## Instance Object - /com/ubuntu/Upstart/jobs/[name]/[instance]
 
-## Interface - com.ubuntu.Upstart0\_6.Instance
+### Interface - com.ubuntu.Upstart0\_6.Instance
 
 **Methods**
 
