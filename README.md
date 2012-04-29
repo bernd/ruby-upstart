@@ -54,7 +54,7 @@ manager.jobs.each do |job|
   job.author # "John Doe"
 end
 
-manager.on(:job_added) do |job|
+manager.on_signal(:job_added) do |job|
   job.inspect # #<Upstart::Job:0x0000 name='cron'>
 end
 
