@@ -8,8 +8,8 @@ A Ruby library to inspect and control the
 > handles starting of tasks and services during boot, stopping them during
 > shutdown and supervising them while the system is running.
 
-The library is written in pure Ruby and uses the
-[ruby-dbus](https://github.com/mvidner/ruby-dbus/) library to communicate with
+The library is written in pure Ruby and uses
+[ruby-dbus](https://github.com/mvidner/ruby-dbus/) to communicate with
 Upstart's D-Bus interface.
 
 WARNING
