@@ -47,12 +47,18 @@ job = manager.job('cron') # #<Upstart::Job:0x0000 name='cron'>
 
 manager.jobs.each do |job|
   job.inspect # #<Upstart::Job:0x0000 name='cron'>
+
+  job.name # "cron"
+  job.version # "1.0"
+  job.description # "The cron daemon"
+  job.author # "John Doe"
 end
 
 manager.on(:job_added) do |job|
   job.inspect # #<Upstart::Job:0x0000 name='cron'>
 end
 
+instance = job.instance('doesnotexist') # #<Upstart::UnknownInstance:0x0000>
 instance = job.instance('i1') # #<Upstart::JobInstance:0x0000 name='i1'>
 
 # Might require superuser privileges.
