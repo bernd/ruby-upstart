@@ -42,7 +42,7 @@ manager.reload # Reload configuration. (needs superuser privileges!)
 
 version = manager.version # "init (upstart 1.5)"
 
-job = manager.job('doesnotexist') # #<Upstart::MissingJob:0x0000 exists=false>
+job = manager.job('doesnotexist') # #<Upstart::UnknownJob:0x0000 exists=false>
 job = manager.job('cron') # #<Upstart::Job:0x0000 name='cron'>
 
 manager.jobs.each do |job|
