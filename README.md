@@ -52,6 +52,10 @@ manager.jobs.each do |job|
   job.version # "1.0"
   job.description # "The cron daemon"
   job.author # "John Doe"
+
+  job.on_signal(:instance_added) do |instance|
+    # #<Upstart::JobInstance:0x0000 name='_'>
+  end
 end
 
 manager.on_signal(:job_added) do |job|
