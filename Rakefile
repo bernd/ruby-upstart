@@ -22,3 +22,7 @@ YARD::Rake::YardocTask.new
 
 desc 'Generate Documentation'
 task :doc => :yard
+
+task :clean do
+  sh 'rm -rf .yardoc doc'
+end
