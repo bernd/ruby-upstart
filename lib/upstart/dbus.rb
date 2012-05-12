@@ -3,6 +3,19 @@ require 'upstart/dbus/service'
 
 module Upstart
   # Provides access to the system DBus instance.
+  #
+  # @example
+  #   bus = Upstart::DBus.new
+  #   service = bus.service('com.ubuntu.Upstart')
+  #   object = service.object('/com/ubuntu/Upstart', 'com.ubuntu.Upstart0_6')
+  #
+  #   object.on_signal(:JobAdded) do |job_path|
+  #     # ...
+  #   end
+  #
+  #   Signal.trap(:INT) { bus.stop }
+  #
+  #   bus.start
   class DBus
     def initialize
       @bus = ::DBus::SystemBus.instance
